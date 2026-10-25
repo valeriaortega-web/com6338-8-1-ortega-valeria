@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Finder</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Recipe Finder</h1>
+    <p>Find something delicious to make.</p>
+  </header>
+
+  <main>
+    <section class="search-section">
+      <h2>What are you craving?</h2>
+      <form id="search-form">
+        <label for="search-input">Search for a recipe</label>
+        <div class="search-controls">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Try pasta, chicken, or curry..."
+            required
+          >
+          <button type="submit">Search</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="recipes-section">
+      <h2>Recipes</h2>
+      <div id="recipe-results">
+        <p>Search for a recipe to get started!</p>
+      </div>
+    </section>
+
+    <div id="recipe-modal" class="recipe-modal" hidden>
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="details-title">
+    <button type="button" id="close-modal" class="close-modal"
+    aria-label="Close recipe details">
+    &times;
+    </button>
+
+    <h2 id="details-title">Recipe Details</h2>
+    <div id="details-content"></div>
+    </div>
+    </div>
+
+    <section class="favorites-section">
+      <h2>Your Favorites</h2>
+      <div id="favorite-results">
+        <p>Your saved recipes will appear here.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with love for food.</p>
+  </footer>
+</body>
+</html>
